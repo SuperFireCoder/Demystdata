@@ -11,7 +11,7 @@ export interface Cell {
 export interface Row {
   RowType: string;
   Title?: string;
-  Cells: Cell[];
+  Cells?: Cell[];
   Rows?: Row[];
 }
 
