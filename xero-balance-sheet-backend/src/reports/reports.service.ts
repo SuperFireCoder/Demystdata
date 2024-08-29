@@ -3,7 +3,7 @@ import axios from 'axios';
 
 @Injectable()
 export class ReportsService {
-  private readonly API_BASE_URL = 'http://localhost:3000/api.xro/2.0/Reports/BalanceSheet';
+  private readonly API_BASE_URL = 'http://xero-api-mock:3000/api.xro/2.0/Reports/BalanceSheet';
 
   async fetchBalanceSheet(): Promise<any> {
     try {

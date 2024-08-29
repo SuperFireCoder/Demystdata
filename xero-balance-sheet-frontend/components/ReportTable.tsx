@@ -28,7 +28,7 @@ const ReportTable: React.FC<ReportTableProps> = ({ report }) => {
               )}
               {section.Rows?.map((row, idx) => (
                 <tr key={idx} className={row.RowType === 'SummaryRow' ? 'font-bold bg-gray-50' : ''}>
-                  {row.Cells.map((cell, idy) => (
+                  {row.Cells?.map((cell, idy) => (
                     <td
                       key={idy}
                       className={`py-3 px-4 ${idy === 0 ? 'text-left' : 'text-right'}`}
